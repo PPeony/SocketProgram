@@ -10,7 +10,9 @@ Socket socket = socket.accept();//监听端口
 //用流读写
 ```
 ### 客户端
+```java
 Socket socket = new Socket(ip,port);
+```
 //就一行就可以创建连接，也是用流读写
 ### 缺点
 每一个socket都需要新建一个线程，这点在我之后的学习过程中发现可以用nio改进。
